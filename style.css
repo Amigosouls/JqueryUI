@@ -1,0 +1,18 @@
+#menu {
+    overflow : hidden;
+    width : 500px;
+  }
+
+  #menu > li {
+    float : left;
+    width : 100px !important;
+  }
+
+  #menu .ui-menu {
+    width : 200px;
+  }
+
+  #nav .ui-menu {
+    width: 30px;
+    height:600px;
+ }

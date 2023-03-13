@@ -1,51 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery UI</title>
-    <link href = "https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css"
-   rel = "stylesheet">
-<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script src="style.css"></script>
-</head>
-<body>
-  </head>  
-  <body>  
-     <!-- HTML -->   
-     <ul id="menu">  
-        <li><a href="#">Car</a></li>  
-        <li><a href="#">Bike</a></li>  
-        <li><a href="#">Lorry</a>  
-           <ul>  
-              <li><a href="#">Bharath benZ</a></li>  
-              <li><a href="#">TATA</a></li>  
-              <li><a href="#">Ashok LeylAnd</a></li>  
-              <li><a href="#">MACK</a></li>  
-              <li><a href="#">EICHER</a></li>  
-           </ul>  
-        </li>  
-        <li><a href="#">TRAIN</a></li>  
-        <li><a href="#">AEROPLANE</a></li>  
-     </ul>  
-     <ul id="nav">  
-      <li><a href="#">Car</a></li>  
-      <li><a href="#">Bike</a></li>  
-      <li><a href="#">Lorry</a>  
-         <ul>  
-            <li><a href="#">Bharath benZ</a></li>  
-            <li><a href="#">TATA</a></li>  
-            <li><a href="#">Ashok LeylAnd</a></li>  
-            <li><a href="#">MACK</a></li>  
-            <li><a href="#">EICHER</a></li>  
-         </ul>  
-      </li>  
-      <li><a href="#">TRAIN</a></li>  
-      <li><a href="#">AEROPLANE</a></li>  
-   </ul> 
 
-     <script src="query.js"></script>
-</body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery UI</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  </head>
+
+  <body>
+    <!-- HTML -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ride n Style</a>
+        <button class="subscribe" id="opener">
+          <span >Subscribe</span>
+        </button>
+       
+      </div>
+      
+    </nav>
+    <div id="dialog1">
+      <form action="#">
+        <input type="email" placeholder="enter Email">
+        <input type="submit" name="submit" value="Submit">
+      </form>
+
+    </div>
+    <ul id="menu" style="position:relative;">
+      <li>
+        <div>Bikes</div>
+      </li>
+      <li>
+        <div>Cars</div>
+        <ul>
+          <li>
+            <div>Sedan</div>
+            <ul>
+              <li>
+                <div>Bmw</div>
+              </li>
+              <li>
+                <div>Mercedes Benz</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>Cruiser</div>
+            <ul>
+              <li>
+                <div>Chevorlet</div>
+              </li>
+              <li>
+                <div>Range Rover</div>
+                </div>
+              </li>
+              <li>
+                <div>Fiat</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>SUV</div>
+          </li>
+        </ul>
+      </li>
+      <li class="ui-state-disabled">
+        <div>4*4</div>
+      </li>
+    </ul>
+
+    <!--Tabs-->
+    <div id="tabs" style="float: left;position: absolute; width: 600px;">
+      <ul class="bg-primary">
+        <li><a href="#tabs-1">Bikes</a></li>
+        <li><a href="#tabs-2">Trucks</a></li>
+        <li><a href="#tabs-3">Cars</a></li>
+      </ul>
+      <div id="tabs-1">
+        <img src="bike1.jpeg" alt="bike">
+        
+        <img src="bike2.jpeg" alt="bike">
+        <img src="bike3.jpeg" alt="bike">
+        <button id="downloadButton">Download</button>
+      </div>
+      <div id="tabs-2">
+        <img src="truck1.jpeg" alt="bike">
+        
+        <img src="truck2.jpeg" alt="bike">
+        <img src="truck3.jpeg" alt="bike">
+        <button id="downloadButton">Download</button>
+      </div>
+      <div id="tabs-3">
+        <img src="car1.jpeg" alt="bike">
+        
+        <img src="car2.jpeg" alt="bike">
+        <img src="car3.jpeg" alt="bike">
+        <button id="downloadButton">Download</button>
+      </div>
+      <div id="dialog" title="File Download">
+        <div class="progress-label">Starting download...</div>
+        <div id="progressbar"></div>
+      </div>
+    </div>
+
+    <script src="query.js"></script>
+  </body>
+
 </html>

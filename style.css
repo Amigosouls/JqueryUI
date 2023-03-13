@@ -1,18 +1,23 @@
-#menu {
-    overflow : hidden;
-    width : 500px;
-  }
-
-  #menu > li {
-    float : left;
-    width : 100px !important;
-  }
-
-  #menu .ui-menu {
-    width : 200px;
-  }
-
-  #nav .ui-menu {
-    width: 30px;
-    height:600px;
+.ui-menu 
+{ 
+    width: 150px;
+    color:gold;
+    background-color:dimgray;
+    font-weight:bolder;
+    font-size: 20px;
  }
+ #menu{
+    width: 200px;
+ }
+ #progressbar {
+    margin-top: 20px;
+  }
+ 
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+ 
+  .ui-dialog-titlebar-close {
+    display: none;
+  }
